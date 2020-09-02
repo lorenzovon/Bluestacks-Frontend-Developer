@@ -1,8 +1,5 @@
-.ManageCampaigns {
-    position: absolute;    
-    left: 182px;
-    top: 120px;
-    font-style: normal;
+.ManageCampaignsContent {    
+    font-style: normal; 
     font-weight: bold;
     font-size: 48px;
     line-height: 50px;

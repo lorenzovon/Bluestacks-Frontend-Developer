@@ -3,9 +3,11 @@ import './ManageCampaigns.css';
 
 function ManageCampaigns() {
   return (
-    <h1 className="ManageCampaigns" >
-        Manage Campaigns
-    </h1>
+    <div className="ManageCampaignsContainer">
+      <h1 className="ManageCampaignsContent" >
+          Manage Campaigns
+      </h1>
+    </div>
   );
 }
 
