@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/Bluestacks-Frontend-Developer/static/css/main.be151c90.chunk.css",
-    "main.js": "/Bluestacks-Frontend-Developer/static/js/main.5d72a253.chunk.js",
-    "main.js.map": "/Bluestacks-Frontend-Developer/static/js/main.5d72a253.chunk.js.map",
+    "main.css": "/Bluestacks-Frontend-Developer/static/css/main.2b311ed9.chunk.css",
+    "main.js": "/Bluestacks-Frontend-Developer/static/js/main.d84e260f.chunk.js",
+    "main.js.map": "/Bluestacks-Frontend-Developer/static/js/main.d84e260f.chunk.js.map",
     "runtime-main.js": "/Bluestacks-Frontend-Developer/static/js/runtime-main.3f1ef42f.js",
     "runtime-main.js.map": "/Bluestacks-Frontend-Developer/static/js/runtime-main.3f1ef42f.js.map",
-    "static/js/2.f79a07e0.chunk.js": "/Bluestacks-Frontend-Developer/static/js/2.f79a07e0.chunk.js",
-    "static/js/2.f79a07e0.chunk.js.map": "/Bluestacks-Frontend-Developer/static/js/2.f79a07e0.chunk.js.map",
+    "static/js/2.d188ca32.chunk.js": "/Bluestacks-Frontend-Developer/static/js/2.d188ca32.chunk.js",
+    "static/js/2.d188ca32.chunk.js.map": "/Bluestacks-Frontend-Developer/static/js/2.d188ca32.chunk.js.map",
     "index.html": "/Bluestacks-Frontend-Developer/index.html",
-    "precache-manifest.6e1ec759c084702ac2fb1c47b14d0491.js": "/Bluestacks-Frontend-Developer/precache-manifest.6e1ec759c084702ac2fb1c47b14d0491.js",
+    "precache-manifest.c0e30e3fd4a542e1ff59301278cec3df.js": "/Bluestacks-Frontend-Developer/precache-manifest.c0e30e3fd4a542e1ff59301278cec3df.js",
     "service-worker.js": "/Bluestacks-Frontend-Developer/service-worker.js",
-    "static/css/main.be151c90.chunk.css.map": "/Bluestacks-Frontend-Developer/static/css/main.be151c90.chunk.css.map",
-    "static/js/2.f79a07e0.chunk.js.LICENSE.txt": "/Bluestacks-Frontend-Developer/static/js/2.f79a07e0.chunk.js.LICENSE.txt"
+    "static/css/main.2b311ed9.chunk.css.map": "/Bluestacks-Frontend-Developer/static/css/main.2b311ed9.chunk.css.map",
+    "static/js/2.d188ca32.chunk.js.LICENSE.txt": "/Bluestacks-Frontend-Developer/static/js/2.d188ca32.chunk.js.LICENSE.txt",
+    "static/media/Bitmap.png": "/Bluestacks-Frontend-Developer/static/media/Bitmap.977ecf7b.png",
+    "static/media/GameLogo.png": "/Bluestacks-Frontend-Developer/static/media/GameLogo.98c59602.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3f1ef42f.js",
-    "static/js/2.f79a07e0.chunk.js",
-    "static/css/main.be151c90.chunk.css",
-    "static/js/main.5d72a253.chunk.js"
+    "static/js/2.d188ca32.chunk.js",
+    "static/css/main.2b311ed9.chunk.css",
+    "static/js/main.d84e260f.chunk.js"
   ]
 }
