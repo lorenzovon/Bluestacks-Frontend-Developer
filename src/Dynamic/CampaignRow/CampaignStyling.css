@@ -1,0 +1,75 @@
+.CampaignContainer {
+    margin-top: 26px;
+    margin-bottom: 18px;
+    margin-right: 10px;
+}
+
+.Date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #2B416C;
+    height: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+.numofDays {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7788A3;
+    height: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+.Campaign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.NameRegion {
+    margin-left: 14px;
+}
+.CampaignName {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #556789;
+    height: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+.CampaignRegion {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    color: #9CA2B7;
+    height: 16px;
+    padding: 0px;
+    margin: 0px;
+}
+.ViewPricing {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7788A3;
+    height: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+.PricingSpace {
+    margin-left: 6px;
+}
+.Actions {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7788A3;
+    height: 16px;
+    margin: 0px;
+    padding: 0px;
+}
+.ActionsSpace {
+    margin-left: 6px;
+    margin-right: 40px;
+}

@@ -1,23 +1,33 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+import Modal from '@material-ui/core/Modal';
+import content from '../.././Data/TestData.json' ;
+import CampaignDate from '../CampaignRow/CampaignDate' ;
+import Campaign from '../CampaignRow/Campaign' ;
+import CampaignView from '../CampaignRow/CampaignView' ;
+import CampaignAction from '../CampaignRow/CampaignAction' ;
+import PricingModal from '../CampaignRow/PricingModal' ;
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
-
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
+const StyledTableCell = withStyles((theme) => ({
+  head: {
+    backgroundColor: "#F1F1F4",
+    color: "#556789",
+    textTransform: "uppercase",
+    fontSize: "16px",
+    fontWeight: 550,
+  },
+  body: {
+    fontSize: 14,
+  },
+}))(TableCell);
 
 const useStyles = makeStyles({
   table: {
@@ -25,31 +35,83 @@ const useStyles = makeStyles({
   },
 });
 
+const NoDesignButton = withStyles({
+  root: {
+    boxShadow: 'none',
+    textTransform: 'none',    
+    padding: '0px 0px 0px 0px',
+    border: '0px',
+    lineHeight: '1',
+    backgroundColor: 'transparent',
+    borderColor: 'transparent', 
+    '&:hover': {
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',
+      boxShadow: 'none',
+    },
+    '&:active': {
+      boxShadow: 'none',
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',      
+    },
+    '&:focus': {
+      backgroundColor: 'transparent',
+      borderColor: 'transparent',
+      boxShadow: 'none',
+    },
+  },
+})(Button);
+
 export default function UpcomingCampaigns() {
   const classes = useStyles();
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };  
+
   return (
-    <TableContainer>
-      <Table className={classes.table} >
+    <TableContainer component={Paper}>
+      <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <TableCell>Dessert</TableCell>
-            <TableCell>Calories</TableCell>
-            <TableCell>Fat</TableCell>
-            <TableCell>Carbs</TableCell>
-            <TableCell>Protein</TableCell>
+            <StyledTableCell>Date</StyledTableCell>
+            <StyledTableCell>Campaign</StyledTableCell>
+            <StyledTableCell>View</StyledTableCell>
+            <StyledTableCell>Actions</StyledTableCell>
           </TableRow>
-        </TableHead>
+        </TableHead>        
         <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell>{row.calories}</TableCell>
-              <TableCell>{row.fat}</TableCell>
-              <TableCell>{row.carbs}</TableCell>
-              <TableCell>{row.protein}</TableCell>
+          {content.map((campaignData, index) => (
+            <TableRow key={campaignData.index}>
+              <StyledTableCell component="th" scope="row">
+                <CampaignDate />                
+              </StyledTableCell>
+              <StyledTableCell>
+                <Campaign name={campaignData.name} region={campaignData.region} />
+              </StyledTableCell>
+              <StyledTableCell>
+                <NoDesignButton onClick={handleOpen}>
+                  <CampaignView />
+                </NoDesignButton> 
+                <Modal
+                  open={open}
+                  onClose={handleClose}
+                  aria-labelledby="simple-modal-title"
+                  aria-describedby="simple-modal-description"
+                >
+                  <PricingModal handleClose={handleClose} name={campaignData.name} 
+                    region={campaignData.region}/>
+                </Modal> 
+              </StyledTableCell>
+              <StyledTableCell>
+                <CampaignAction />
+              </StyledTableCell>              
             </TableRow>
           ))}
         </TableBody>

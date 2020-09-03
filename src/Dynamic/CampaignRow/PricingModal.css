@@ -1,0 +1,85 @@
+.PricingModal {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 380px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.ImageNameRegion {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+.NameRegion {
+    margin-left: 14px;
+}
+.CampaignName {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #2B416C;
+    height: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+.CampaignRegion {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    color: #9CA2B7;
+    height: 16px;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+.PricingHeader {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #2B416C;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+}
+.Prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Prices p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #7788A3;
+    margin: 0px;
+    padding: 0px;
+}
+.Prices h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #556789;
+    margin: 0px;
+    padding: 0px;
+}
+.CloseButtonContainer {
+    display: flex;
+    justify-content: center;
+}
+.CloseButton {
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    width: 80px;
+    height: 40px;
+}
