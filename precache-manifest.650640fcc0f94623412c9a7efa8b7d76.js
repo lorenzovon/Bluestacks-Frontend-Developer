@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fa47acc995d9b49b4abf81b8c5cf6b22",
+    "revision": "f63de96adfab273cf899c7a81fcd53c8",
     "url": "/Bluestacks-Frontend-Developer/index.html"
   },
   {
-    "revision": "0bb6193a9445947024c4",
-    "url": "/Bluestacks-Frontend-Developer/static/css/main.2b311ed9.chunk.css"
+    "revision": "52b5a1ca393acfb24334",
+    "url": "/Bluestacks-Frontend-Developer/static/css/main.661a57f2.chunk.css"
   },
   {
-    "revision": "0f715bb88bda92170d6b",
-    "url": "/Bluestacks-Frontend-Developer/static/js/2.d188ca32.chunk.js"
+    "revision": "20aecb4c7f9f56f0dc28",
+    "url": "/Bluestacks-Frontend-Developer/static/js/2.6b80eae3.chunk.js"
   },
   {
-    "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/Bluestacks-Frontend-Developer/static/js/2.d188ca32.chunk.js.LICENSE.txt"
+    "revision": "556d72da1c19c1e88e2917fa6505d7f0",
+    "url": "/Bluestacks-Frontend-Developer/static/js/2.6b80eae3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bb6193a9445947024c4",
-    "url": "/Bluestacks-Frontend-Developer/static/js/main.d84e260f.chunk.js"
+    "revision": "52b5a1ca393acfb24334",
+    "url": "/Bluestacks-Frontend-Developer/static/js/main.b5540750.chunk.js"
   },
   {
     "revision": "de94a59f04edd6f712d0",
