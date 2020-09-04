@@ -3,33 +3,24 @@ import NavBar from '../Static/NavBar' ;
 import ManageCampaigns from '../Static/ManageCampaigns' ;
 import InternalTabs from '../Dynamic/InternalTabs' ;
 import './Playground.css' ;
-// import data from '../Data/TestData.json' ;
-// import CampaignDate from '../Dynamic/CampaignRow/CampaignDate' ;
-// import Campaign from '../Dynamic/CampaignRow/Campaign' ;
-// import CampaignView from '../Dynamic/CampaignRow/CampaignView' ;
-// import CampaignAction from '../Dynamic/CampaignRow/CampaignAction' ;
+// import moment from 'moment';
+// import Message from './Message';
+// import CompleteCampaigns from '../Dynamic/Campaigns/CompleteCampaigns' ;
 
 function Playground() {
-  // let today = new Date() ;
+  // var a = moment("Sep 4, 2020");
+  // var b = moment([2007, 0, 28]);
+  // a.diff(b)
   return (
     <div className="Playground">      
-      <NavBar /> 
-      {/* <p>Lets chill</p>  
-      <CampaignDate />
-      <Campaign /> 
-      <CampaignView />
-      <CampaignAction /> */}
+      <NavBar />   
+      {/* <h1>{a.diff(b,'days')}</h1>     */}
+      {/* <Message /> */}
+      {/* <CompleteCampaigns /> */}
       <div className ="InnerContent">
         <ManageCampaigns /> 
         <InternalTabs />
-      </div> 
-      {/* {data.map((campaignDetail, index)=>{
-        return (
-          <h1>
-            {campaignDetail.name}
-          </h1>
-        );
-      })} */}      
+      </div>       
     </div>
   );
 }

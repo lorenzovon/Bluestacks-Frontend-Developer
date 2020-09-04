@@ -1,0 +1,86 @@
+function createData(id, name, region, createdOn, price, csv, report, image_url) {
+    return { id, name, region, createdOn, price, csv, report, image_url };
+}
+  
+const rows = [
+    createData(
+        1,
+        "Prison Break",
+        "US",
+        1559807714999,
+        "Price info of Test Whatsapp",
+        "Some CSV link for Whatsapp",
+        "Some report link for Whatsapp",
+        "Some image url of the campaign" 
+    ),
+    createData(
+        2,
+        "Super Jewels Quest",
+        "CA",
+        1559806715124,
+        "Price info of Super Jewels Quest",
+        "Some CSV link for Super Jewels Quest",
+        "Some report link for Super Jewels Ques",
+        "Some image url of the campaign"
+    ),
+    createData(
+        3,
+        "Mole Slayer",
+        "FR",
+        1559806711124,
+        "Price info of Mole Slayer",
+        "Some CSV link for Mole Slayer",
+        "Some report link for Mole Slayer",
+        "Some image url of the campaign"
+    ),
+    createData(
+        4,
+        "Mancala Mix",
+        "JP",
+        1559806680124,
+        "Price info of Mancala Mix",
+        "Some CSV link for Mancala Mix",
+        "Some report link for Mancala Mix",
+        "Some image url of the campaign"
+    ),
+    createData(
+        5,
+        "Battle Grounds",
+        "US",
+        1559807714999,
+        "Price info of Test Whatsapp",
+        "Some CSV link for Whatsapp",
+        "Some report link for Whatsapp",
+        "Some image url of the campaign" 
+    ),
+    createData(
+        6,
+        "PUBG",
+        "CA",
+        1559806715124,
+        "Price info of Super Jewels Quest",
+        "Some CSV link for Super Jewels Quest",
+        "Some report link for Super Jewels Ques",
+        "Some image url of the campaign"
+    ),
+    createData(
+        7,
+        "Bifrost Defender",
+        "FR",
+        1559806711124,
+        "Price info of Mole Slayer",
+        "Some CSV link for Mole Slayer",
+        "Some report link for Mole Slayer",
+        "Some image url of the campaign"
+    ),
+    createData(
+        8,
+        "Avengers Assemble",
+        "JP",
+        1559806680124,
+        "Price info of Mancala Mix",
+        "Some CSV link for Mancala Mix",
+        "Some report link for Mancala Mix",
+        "Some image url of the campaign"
+    )
+];

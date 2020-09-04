@@ -14,9 +14,9 @@ function PricingModal(props) {
             />
             <div className="NameRegion">
                 <h1 className="CampaignName" >{props.name}</h1>
-                <p className="CampaignRegion">{props.region}</p>
-                {/* <h1 className="CampaignName" >PUBG MOBILE</h1>
-                <p className="CampaignRegion">US</p> */}
+                {console.log(props.name)}
+                <p className="CampaignRegion">{props.region}</p>   
+                {console.log(props.name)}
             </div>
         </div>
         <h1 className="PricingHeader">

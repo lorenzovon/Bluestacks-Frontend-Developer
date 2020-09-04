@@ -1,0 +1,10 @@
+.InnerContent {
+    margin-left: 182px ;
+    margin-right: 182px ;
+}
+@media only screen and (max-width: 900px) and (min-width: 480px ) {
+    .InnerContent {
+        margin-left: 60px ;
+        margin-right: 60px ;
+    }
+}

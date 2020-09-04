@@ -5,6 +5,7 @@
   "homepage": "https://lorenzovon.github.io/Bluestacks-Frontend-Developer/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/pickers": "^3.2.10",
     "@material-ui/styles": "^4.10.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -12,6 +13,7 @@
     "gh-pages": "^3.1.0",
     "moment": "^2.27.0",
     "react": "^16.13.1",
+    "react-day-picker": "^7.4.8",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },

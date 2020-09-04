@@ -62,12 +62,15 @@ const NoDesignButton = withStyles({
   },
 })(Button);
 
-export default function LiveCampaigns(props) {
+export default function CompleteCampaigns(props) {
   const classes = useStyles();
+
   const [open, setOpen] = React.useState(false);
+
   const handleOpen = () => {
     setOpen(true);
   };
+
   const handleClose = () => {
     setOpen(false);
   };  
@@ -87,7 +90,7 @@ export default function LiveCampaigns(props) {
           {props.campaignData.map((row) => (
             <TableRow key={row.id}>
               <StyledTableCell component="th" scope="row">
-                <CampaignDate createdOn={row.createdOn} />                 
+                <CampaignDate createdOn={row.createdOn} />                
               </StyledTableCell>
               <StyledTableCell>
                 <Campaign name={row.name} region={row.region} />
@@ -98,16 +101,12 @@ export default function LiveCampaigns(props) {
                 </NoDesignButton> 
                 <Modal
                   open={open}
-                  onClose={handleClose}
-                  // aria-labelledby="simple-modal-title"
-                  // aria-describedby="simple-modal-description"
+                  onClose={handleClose}                              
                 >
-                  <PricingModal 
-                    handleClose={handleClose}
-                    key={row.id}
+                  <PricingModal
+                    handleClose={handleClose}                     
                     name={row.name} 
-                    region={row.region}
-                  />
+                    region={row.region}/>
                 </Modal> 
               </StyledTableCell>
               <StyledTableCell>

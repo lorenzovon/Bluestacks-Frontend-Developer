@@ -9,7 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import Modal from '@material-ui/core/Modal';
-import content from '../.././Data/TestData.json' ;
+// import content from '../.././Data/TestData.json' ;
 import CampaignDate from '../CampaignRow/CampaignDate' ;
 import Campaign from '../CampaignRow/Campaign' ;
 import CampaignView from '../CampaignRow/CampaignView' ;
@@ -62,7 +62,7 @@ const NoDesignButton = withStyles({
   },
 })(Button);
 
-export default function UpcomingCampaigns() {
+export default function UpcomingCampaigns(props) {
   const classes = useStyles();
 
   const [open, setOpen] = React.useState(false);
@@ -87,13 +87,13 @@ export default function UpcomingCampaigns() {
           </TableRow>
         </TableHead>        
         <TableBody>
-          {content.map((campaignData, index) => (
-            <TableRow key={campaignData.index}>
+          {props.campaignData.map((row) => (
+            <TableRow key={row.id}>
               <StyledTableCell component="th" scope="row">
-                <CampaignDate />                
+                <CampaignDate createdOn={row.createdOn} />                
               </StyledTableCell>
               <StyledTableCell>
-                <Campaign name={campaignData.name} region={campaignData.region} />
+                <Campaign name={row.name} region={row.region} />
               </StyledTableCell>
               <StyledTableCell>
                 <NoDesignButton onClick={handleOpen}>
@@ -101,12 +101,12 @@ export default function UpcomingCampaigns() {
                 </NoDesignButton> 
                 <Modal
                   open={open}
-                  onClose={handleClose}
-                  aria-labelledby="simple-modal-title"
-                  aria-describedby="simple-modal-description"
+                  onClose={handleClose}                              
                 >
-                  <PricingModal handleClose={handleClose} name={campaignData.name} 
-                    region={campaignData.region}/>
+                  <PricingModal
+                    handleClose={handleClose}                     
+                    name={row.name} 
+                    region={row.region}/>
                 </Modal> 
               </StyledTableCell>
               <StyledTableCell>

@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   },
   logoposition: {
     left: "182px",
+    '@media (max-width:900px) and (min-width:480px)':{
+      left: "60px"
+    },
     marginTop: "17px",
     marginBottom: "18px",
     padding: "0px",
